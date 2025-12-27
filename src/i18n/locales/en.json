@@ -1,0 +1,205 @@
+{
+  "nav": {
+    "home": "Home",
+    "vehicles": "Vehicles",
+    "about": "About",
+    "contact": "Contact",
+    "enquireNow": "Enquire Now"
+  },
+  "hero": {
+    "tagline": "Premium Auto Dealership",
+    "title1": "Bahwan",
+    "title2": "Motors",
+    "description": "Experience luxury redefined. Discover our exclusive collection of premium vehicles from trusted manufacturers across the Gulf region.",
+    "exploreCollection": "Explore Collection",
+    "contactUs": "Contact Us",
+    "scrollToExplore": "Scroll to explore"
+  },
+  "vehicles": {
+    "ourCollection": "Our Collection",
+    "premiumVehicles": "Premium Vehicles",
+    "description": "Explore our curated selection of luxury vehicles, available from multiple trusted manufacturers across Saudi Arabia and Oman.",
+    "meetTheLine": "Meet the {{car}} line",
+    "lx600": "LX 600",
+    "gxr": "Land Cruiser GXR",
+    "lexusLx600": "Lexus LX 600",
+    "toyotaGxr": "Toyota GXR",
+    "viewDetails": "View Details",
+    "contactForDetails": "Contact For Details",
+    "contactForPrice": "Contact For Price"
+  },
+  "variants": {
+    "bb": {
+      "name": "BB",
+      "description": "Premium luxury with refined appointments"
+    },
+    "vip": {
+      "name": "VIP",
+      "description": "Executive seating with ultimate comfort"
+    },
+    "f-sport": {
+      "name": "F-SPORT",
+      "description": "Dynamic performance with sport styling"
+    },
+    "l4": {
+      "name": "L4",
+      "description": "Efficient V6 power for every terrain"
+    },
+    "l5": {
+      "name": "L5",
+      "description": "Premium V6 with flagship features"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "heading": "Your Trusted Partner in Luxury Automobiles",
+    "paragraph1": "Bahwan Motors has established itself as a premier destination for luxury vehicles in the Gulf region. We specialize in sourcing premium automobiles from authorized manufacturers in Saudi Arabia, Oman, and Kuwait.",
+    "paragraph2": "Our commitment to excellence, transparent dealings, and customer satisfaction has made us the preferred choice for discerning automotive enthusiasts seeking the finest vehicles available in the market.",
+    "features": {
+      "verifiedQuality": {
+        "title": "Verified Quality",
+        "description": "Every vehicle undergoes rigorous inspection to ensure premium quality."
+      },
+      "authorizedDealer": {
+        "title": "Authorized Dealer",
+        "description": "Official partnerships with manufacturers across the Gulf region."
+      },
+      "expertTeam": {
+        "title": "Expert Team",
+        "description": "Knowledgeable staff dedicated to finding your perfect vehicle."
+      },
+      "fastDelivery": {
+        "title": "Fast Delivery",
+        "description": "Streamlined process for quick and hassle-free car delivery."
+      }
+    }
+  },
+  "contact": {
+    "getInTouch": "Get In Touch",
+    "title": "Contact Us",
+    "description": "Ready to find your dream vehicle? Our team is here to assist you with any inquiries about our premium collection.",
+    "phone": "Phone",
+    "snapchat": "Snapchat",
+    "followOnSnapchat": "Follow us on Snapchat",
+    "location": "Location",
+    "gulfRegion": "Gulf Region",
+    "saudiArabia": "Saudi Arabia",
+    "workingHours": "Working Hours",
+    "satThu": "Sat - Thu: 9AM - 9PM",
+    "fridayClosed": "Friday: Closed",
+    "contact": "Contact",
+    "readyToExperience": "Ready to Experience Luxury?",
+    "ctaDescription": "Contact us today to schedule a viewing or learn more about our exclusive collection of premium vehicles.",
+    "callNow": "Call Now",
+    "followSocial": "Follow Us on Social Media"
+  },
+  "footer": {
+    "rights": "© 2021 Bahwan Motors. All rights reserved."
+  },
+  "carDetail": {
+    "vehicleNotFound": "Vehicle Not Found",
+    "returnHome": "Return Home",
+    "exterior": "Exterior",
+    "interior": "Interior",
+    "selectColor": "Select Color",
+    "edition": "Edition",
+    "startingPrice": "Starting Price",
+    "specifications": "Specifications",
+    "callToEnquire": "Call to Enquire",
+    "snapchat": "Snapchat",
+    "manufacturers": {
+      "saudi": "Saudi",
+      "braimi": "Braimi",
+      "kuwait": "Kuwait"
+    },
+    "specs": {
+      "engine": "Engine",
+      "power": "Power",
+      "torque": "Torque",
+      "transmission": "Transmission",
+      "drivetrain": "Drivetrain",
+      "seating": "Seating",
+      "fuelType": "Fuel Type",
+      "acceleration": "0-100 km/h",
+      "rearEntertainment": "Rear Entertainment",
+      "features": "Features",
+      "suspension": "Suspension",
+      "brakes": "Brakes",
+      "groundClearance": "Ground Clearance"
+    },
+    "colors": {
+      "sonicWhite": "Sonic White",
+      "obsidianBlack": "Obsidian Black",
+      "titaniumGray": "Titanium Gray",
+      "superWhite": "Super White",
+      "attitudeBlack": "Attitude Black",
+      "grayMetallic": "Gray Metallic"
+    },
+    "specValues": {
+      "3.5L V6 Twin-Turbo": "3.5L V6 Twin-Turbo",
+      "409 HP": "409 HP",
+      "650 Nm": "650 Nm",
+      "10-Speed Automatic": "10-Speed Automatic",
+      "10-Speed Sport AT": "10-Speed Sport AT",
+      "Full-Time 4WD": "Full-Time 4WD",
+      "Part-Time 4WD": "Part-Time 4WD",
+      "7 Passengers": "7 Passengers",
+      "8 Passengers": "8 Passengers",
+      "4 Executive Seats": "4 Executive Seats",
+      "Premium Gasoline": "Premium Gasoline",
+      "Regular Gasoline": "Regular Gasoline",
+      "6.9 seconds": "6.9 seconds",
+      "6.5 seconds": "6.5 seconds",
+      "Dual Screens": "Dual Screens",
+      "Massage, Ottoman": "Massage, Ottoman",
+      "Sport-Tuned AVS": "Sport-Tuned AVS",
+      "High-Performance": "High-Performance",
+      "4.0L V6": "4.0L V6",
+      "275 HP": "275 HP",
+      "385 Nm": "385 Nm",
+      "6-Speed Automatic": "6-Speed Automatic",
+      "225 mm": "225 mm",
+      "4.6L V8": "4.6L V8",
+      "304 HP": "304 HP",
+      "439 Nm": "439 Nm",
+      "230 mm": "230 mm"
+    },
+    "cars": {
+      "lx600-bb": {
+        "name": "Lexus LX 600 BB",
+        "description": {
+          "saudi": "The Lexus LX 600 BB 2026 Saudi Edition combines legendary reliability with refined luxury, featuring premium appointments tailored for the discerning Gulf market.",
+          "braimi": "The Braimi-sourced LX 600 BB 2026 delivers exceptional quality with region-specific enhancements for optimal performance in Gulf conditions."
+        }
+      },
+      "lx600-vip": {
+        "name": "Lexus LX 600 VIP",
+        "description": {
+          "saudi": "The ultimate expression of luxury, the LX 600 VIP 2025 Saudi Edition features executive rear seating with massage and climate control.",
+          "braimi": "Braimi Edition VIP 2025 with unparalleled comfort and executive appointments for the distinguished traveler."
+        }
+      },
+      "lx600-f-sport": {
+        "name": "Lexus LX 600 F-Sport",
+        "description": {
+          "saudi": "The F-Sport 2026 edition delivers dynamic performance with sport-tuned suspension and aggressive styling.",
+          "braimi": "Braimi Edition F-Sport 2026 with enhanced dynamics and sport-focused driving experience."
+        }
+      },
+      "gxr-l4": {
+        "name": "Toyota GXR L4",
+        "description": {
+          "saudi": "The GXR L4 2025 Saudi Edition offers robust performance with the efficient 6-cylinder engine, perfect for both urban and off-road adventures.",
+          "braimi": "The Braimi Edition GXR L4 2025 delivers proven reliability with enhanced features for the demanding Gulf terrain."
+        }
+      },
+      "gxr-l5": {
+        "name": "Toyota GXR L5",
+        "description": {
+          "saudi": "The flagship GXR L5 2025 Saudi Edition features premium appointments and enhanced capabilities for ultimate versatility.",
+          "kuwait": "Kuwait Edition GXR L5 2026 with exclusive features and premium V8 power for discerning buyers."
+        }
+      }
+    }
+  }
+}
