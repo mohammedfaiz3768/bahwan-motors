@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Phone, Menu, X, Globe } from "lucide-react";
+import { Phone, Menu, X, Globe, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -66,7 +66,9 @@ const Header = () => {
               <Phone className="w-4 h-4" />
               <span className="font-medium">0533335911</span>
             </a>
-            <Button variant="gold" size="sm">
+            <Button
+              onClick={() => window.location.href = "tel:0533335911"}
+              variant="gold" size="sm">
               {t("nav.enquireNow")}
             </Button>
           </div>
@@ -106,9 +108,9 @@ const Header = () => {
                 <Globe className="w-4 h-4" />
                 <span className="font-medium">{i18n.language === 'ar' ? 'English' : 'العربية'}</span>
               </button>
-              <a href="tel:0503475940" className="flex items-center gap-2 text-gold">
+              <a href="tel:0533335911" className="flex items-center gap-2 text-gold">
                 <Phone className="w-4 h-4" />
-                <span className="font-medium">0503475940</span>
+                <span className="font-medium">0533335911</span>
               </a>
               <Button variant="gold" className="w-full">
                 {t("nav.enquireNow")}
