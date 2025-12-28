@@ -37,12 +37,64 @@ import lx600BbGrayAngle from "@/assets/lx600-bb-gray-angle.png";
 import lx600BbGraySide from "@/assets/lx600-bb-gray-side.png";
 import lx600BbGrayRear from "@/assets/lx600-bb-gray-rear.png";
 
-// BB variant gallery images by color
+// Lexus LX 600 BB Braimi images
+import lx600BbBraimiFront from "@/assets/lx600-bb-braimi-front.jpg";
+import lx600BbBraimiSide from "@/assets/lx600-bb-braimi-side.jpg";
+import lx600BbBraimiDetail from "@/assets/lx600-bb-braimi-detail.jpg";
+import lx600BbBraimiRear from "@/assets/lx600-bb-braimi-rear.jpg";
+
+// Lexus LX 600 BB Braimi Interior images
+import lx600BbBraimiInterior1 from "@/assets/lx600-bb-braimi-interior-1.jpg";
+import lx600BbBraimiInterior2 from "@/assets/lx600-bb-braimi-interior-2.jpg";
+import lx600BbBraimiInterior3 from "@/assets/lx600-bb-braimi-interior-3.jpg";
+
+// GXR L5 Kuwait images
+import gxrL5KuwaitFront from "@/assets/gxr-l5-kuwait-front.jpg";
+import gxrL5KuwaitSide from "@/assets/gxr-l5-kuwait-side.jpg";
+import gxrL5KuwaitRear from "@/assets/gxr-l5-kuwait-rear.jpg";
+import gxrL5KuwaitDetail from "@/assets/gxr-l5-kuwait-detail.jpg";
+
+// GXR L5 Kuwait Interior images
+import gxrL5KuwaitInterior1 from "@/assets/gxr-l5-kuwait-interior-1.jpg";
+import gxrL5KuwaitInterior2 from "@/assets/gxr-l5-kuwait-interior-2.jpg";
+import gxrL5KuwaitInterior3 from "@/assets/gxr-l5-kuwait-interior-3.jpg";
+import gxrL5KuwaitInterior4 from "@/assets/gxr-l5-kuwait-interior-4.jpg";
+
+// GXR L4 Saudi images
+import gxrL4SaudiFront from "@/assets/gxr-l4-saudi-front.jpg";
+import gxrL4SaudiSide from "@/assets/gxr-l4-saudi-side.jpg";
+import gxrL4SaudiRear from "@/assets/gxr-l4-saudi-rear.jpg";
+
+// GXR L4 Saudi Interior images
+import gxrL4SaudiInterior1 from "@/assets/gxr-l4-saudi-interior-1.jpg";
+import gxrL4SaudiInterior2 from "@/assets/gxr-l4-saudi-interior-2.jpg";
+
+// GXR L4 Braimi images
+import gxrL4BraimiSide from "@/assets/gxr-l4-braimi-side.jpg";
+import gxrL4BraimiDetail from "@/assets/gxr-l4-braimi-detail.jpg";
+import gxrL4BraimiFront from "@/assets/gxr-l4-braimi-front.jpg";
+import gxrL4BraimiRear from "@/assets/gxr-l4-braimi-rear.jpg";
+
+// GXR L4 Braimi Interior images
+import gxrL4BraimiInterior1 from "@/assets/gxr-l4-braimi-interior-1.jpg";
+import gxrL4BraimiInterior2 from "@/assets/gxr-l4-braimi-interior-2.jpg";
+
+// Gallery images by variant/color
 const bbGalleries: Record<string, string[]> = {
   white: [lx600BbWhiteFront, lx600BbWhiteAngle, lx600BbWhiteSide, lx600BbWhiteSide2, lx600BbWhiteRear],
   black: [lx600BbBlackFront, lx600BbBlackAngle, lx600BbBlackSide, lx600BbBlackRear],
   gray: [lx600BbGrayFront, lx600BbGrayAngle, lx600BbGraySide, lx600BbGrayRear],
 };
+
+const lx600BbBraimiGallery = [lx600BbBraimiFront, lx600BbBraimiSide, lx600BbBraimiRear, lx600BbBraimiDetail];
+
+const gxrL5KuwaitGallery = [gxrL5KuwaitFront, gxrL5KuwaitSide, gxrL5KuwaitRear, gxrL5KuwaitDetail];
+const gxrL5KuwaitInteriorGallery = [gxrL5KuwaitInterior1, gxrL5KuwaitInterior2, gxrL5KuwaitInterior3, gxrL5KuwaitInterior4];
+const gxrL4SaudiGallery = [gxrL4SaudiFront, gxrL4SaudiSide, gxrL4SaudiRear];
+const gxrL4SaudiInteriorGallery = [gxrL4SaudiInterior1, gxrL4SaudiInterior2];
+const gxrL4BraimiGallery = [gxrL4BraimiFront, gxrL4BraimiSide, gxrL4BraimiRear, gxrL4BraimiDetail];
+const gxrL4BraimiInteriorGallery = [gxrL4BraimiInterior1, gxrL4BraimiInterior2];
+const lx600BbBraimiInteriorGallery = [lx600BbBraimiInterior1, lx600BbBraimiInterior2, lx600BbBraimiInterior3];
 
 const colorImages: Record<string, Record<string, string>> = {
   lx600: {
@@ -106,7 +158,8 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
   // Scroll to top when page loads
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [variant, manufacturer, carType]);
+    setGalleryIndex(0);
+  }, [variant, manufacturer, carType, activeTab, selectedColor]);
 
   // 3D model is only available for LX 600
   const has3DModel = carType === "lx600";
@@ -117,6 +170,14 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
 
   // Check if this is BB Saudi white variant for gallery
   const isBbSaudiWhite = carType === "lx600" && variant === "bb" && manufacturer === "saudi";
+  // Check if this is Lexus BB Braimi variant for gallery
+  const isLx600BbBraimi = carType === "lx600" && variant === "bb" && manufacturer === "Braimi";
+  // Check if this is GXR L5 Kuwait variant for gallery
+  const isGxrL5Kuwait = carType === "gxr" && variant === "l5" && manufacturer === "kuwait";
+  // Check if this is GXR L4 Saudi variant for gallery
+  const isGxrL4Saudi = carType === "gxr" && variant === "l4" && manufacturer === "saudi";
+  // Check if this is GXR L4 Braimi variant for gallery
+  const isGxrL4Braimi = carType === "gxr" && variant === "l4" && manufacturer === "Braimi";
 
   const variants = carType === "lx600" ? lx600Variants : gxrVariants;
   const carData: CarVariant | undefined = variant && manufacturer ? variants[variant]?.[manufacturer] : undefined;
@@ -142,12 +203,38 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
 
   const interiorImage = carType === "lx600" ? lx600Interior : gxrInterior;
 
-  // Determine current image - use gallery for BB Saudi, otherwise use color images
+  // Determine current image - use gallery for BB Saudi or GXR L5 Kuwait, otherwise use color images
   const isBbVariantPage = carType === "lx600" && variant === "bb";
-  const currentGallery = isBbVariantPage ? bbGalleries[colorKey] || [] : [];
-  const hasGallery = isBbSaudiWhite && activeTab === "exterior" && currentGallery.length > 0;
+
+  let currentGallery: string[] = [];
+  if (activeTab === "exterior") {
+    if (isLx600BbBraimi) {
+      currentGallery = lx600BbBraimiGallery;
+    } else if (isBbVariantPage) {
+      currentGallery = bbGalleries[colorKey] || [];
+    } else if (isGxrL5Kuwait) {
+      currentGallery = gxrL5KuwaitGallery;
+    } else if (isGxrL4Saudi) {
+      currentGallery = gxrL4SaudiGallery;
+    } else if (isGxrL4Braimi) {
+      currentGallery = gxrL4BraimiGallery;
+    }
+  } else if (activeTab === "interior") {
+    if (isGxrL5Kuwait) {
+      currentGallery = gxrL5KuwaitInteriorGallery;
+    } else if (isGxrL4Saudi) {
+      currentGallery = gxrL4SaudiInteriorGallery;
+    } else if (isGxrL4Braimi) {
+      currentGallery = gxrL4BraimiInteriorGallery;
+    } else if (isLx600BbBraimi) {
+      currentGallery = lx600BbBraimiInteriorGallery;
+    }
+  }
+
+  const hasGallery = currentGallery.length > 0;
+
   const currentImage =
-    activeTab === "interior"
+    activeTab === "interior" && !hasGallery
       ? interiorImage
       : hasGallery
         ? currentGallery[galleryIndex]
@@ -211,26 +298,23 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
           <div className="flex bg-secondary rounded-full p-1">
             <button
               onClick={() => setActiveTab("exterior")}
-              className={`px-3 py-2 rounded-full text-sm font-medium transition-all ${
-                activeTab === "exterior" ? "bg-card text-foreground" : "text-muted-foreground hover:text-foreground"
-              }`}
+              className={`px-3 py-2 rounded-full text-sm font-medium transition-all ${activeTab === "exterior" ? "bg-card text-foreground" : "text-muted-foreground hover:text-foreground"
+                }`}
             >
               {t('carDetail.exterior')}
             </button>
             <button
               onClick={() => setActiveTab("interior")}
-              className={`px-3 py-2 rounded-full text-sm font-medium transition-all ${
-                activeTab === "interior" ? "bg-card text-foreground" : "text-muted-foreground hover:text-foreground"
-              }`}
+              className={`px-3 py-2 rounded-full text-sm font-medium transition-all ${activeTab === "interior" ? "bg-card text-foreground" : "text-muted-foreground hover:text-foreground"
+                }`}
             >
               {t('carDetail.interior')}
             </button>
             {has3DModel && (
               <button
                 onClick={() => setActiveTab("3d")}
-                className={`px-3 py-2 rounded-full text-sm font-medium transition-all flex items-center gap-1 ${
-                  activeTab === "3d" ? "bg-gold text-primary-foreground" : "text-muted-foreground hover:text-foreground"
-                }`}
+                className={`px-3 py-2 rounded-full text-sm font-medium transition-all flex items-center gap-1 ${activeTab === "3d" ? "bg-gold text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+                  }`}
               >
                 <Box className="w-4 h-4" />
                 3D
@@ -266,9 +350,8 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
                     />
                   )}
                   <span
-                    className={`relative z-10 ${
-                      mfr === manufacturer ? "text-primary-foreground" : "text-foreground hover:text-gold"
-                    }`}
+                    className={`relative z-10 ${mfr === manufacturer ? "text-primary-foreground" : "text-foreground hover:text-gold"
+                      }`}
                   >
                     {getManufacturerName(mfr)}
                   </span>
@@ -330,9 +413,8 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
                       <button
                         key={index}
                         onClick={() => setGalleryIndex(index)}
-                        className={`w-2 h-2 rounded-full transition-all ${
-                          index === galleryIndex ? "bg-gold w-6" : "bg-foreground/30 hover:bg-foreground/50"
-                        }`}
+                        className={`w-2 h-2 rounded-full transition-all ${index === galleryIndex ? "bg-gold w-6" : "bg-foreground/30 hover:bg-foreground/50"
+                          }`}
                       />
                     ))}
                   </div>
@@ -356,11 +438,10 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
                 <button
                   key={color.name}
                   onClick={() => setSelectedColor(index)}
-                  className={`relative w-10 h-10 rounded-full border-2 transition-all ${
-                    selectedColor === index
-                      ? "border-gold scale-110 ring-2 ring-gold/50"
-                      : "border-border hover:border-muted-foreground"
-                  }`}
+                  className={`relative w-10 h-10 rounded-full border-2 transition-all ${selectedColor === index
+                    ? "border-gold scale-110 ring-2 ring-gold/50"
+                    : "border-border hover:border-muted-foreground"
+                    }`}
                   style={{ backgroundColor: color.hex }}
                   title={getTranslatedColorName(color.name, t)}
                 >
