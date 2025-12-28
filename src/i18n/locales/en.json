@@ -61,8 +61,8 @@
         "description": "Every vehicle undergoes rigorous inspection to ensure premium quality."
       },
       "authorizedDealer": {
-        "title": "Authorized Dealer",
-        "description": "Official partnerships with manufacturers across the Gulf region."
+        "title": "Warranty and Support",
+        "description": "provides warranty and support for all vehicles."
       },
       "expertTeam": {
         "title": "Expert Team",
@@ -86,7 +86,7 @@
     "saudiArabia": "Saudi Arabia",
     "workingHours": "Working Hours",
     "satThu": "Sat - Thu: 9AM - 9PM",
-    "fridayClosed": "Friday: Closed",
+    "fridayClosed": "Friday: 4PM - 9PM",
     "contact": "Contact",
     "readyToExperience": "Ready to Experience Luxury?",
     "ctaDescription": "Contact us today to schedule a viewing or learn more about our exclusive collection of premium vehicles.",
