@@ -355,12 +355,12 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
           className="section-padding py-4 bg-secondary/50"
         >
           <div className="flex items-center justify-center gap-4 flex-wrap">
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-nowrap md:flex-wrap justify-start md:justify-center gap-4 overflow-x-auto pb-2 md:pb-0 px-4 md:px-0 hide-scrollbar w-full md:w-auto">
               {availableManufacturers.map((mfr) => (
                 <Link
                   key={mfr}
                   to={`/${carType}/${variant}/${mfr}`}
-                  className="relative px-4 py-2 rounded-full text-sm font-medium transition-colors"
+                  className="relative px-5 py-2.5 rounded-full text-sm font-medium transition-colors flex-shrink-0"
                 >
                   {mfr === manufacturer && (
                     <motion.div
@@ -370,7 +370,7 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
                     />
                   )}
                   <span
-                    className={`relative z-10 ${mfr === manufacturer ? "text-primary-foreground" : "text-foreground hover:text-gold"
+                    className={`relative z-10 whitespace-nowrap ${mfr === manufacturer ? "text-primary-foreground" : "text-foreground hover:text-gold"
                       }`}
                   >
                     {getManufacturerName(mfr)}

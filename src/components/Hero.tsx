@@ -3,12 +3,12 @@ import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import heroCar from '@/assets/hero-car.jpg';
+import heroCar from '@/assets/hero-car.png';
 
 const Hero = () => {
   const ref = useRef<HTMLElement>(null);
   const { t } = useTranslation();
-  
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"]
@@ -19,13 +19,13 @@ const Hero = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section 
-      ref={ref} 
-      id="hero" 
+    <section
+      ref={ref}
+      id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background Image with scroll parallax only */}
-      <motion.div 
+      <motion.div
         initial={{ scale: 1.1, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
@@ -47,7 +47,7 @@ const Hero = () => {
           <motion.div
             key={i}
             className="absolute w-1 h-1 bg-gold/40 rounded-full"
-            initial={{ 
+            initial={{
               x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
               y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 800),
             }}
@@ -84,7 +84,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mt-4 mb-6 leading-tight"
           >
-            <motion.span 
+            <motion.span
               initial={{ opacity: 0, x: -30, filter: "blur(8px)" }}
               animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
               transition={{ duration: 0.8, delay: 0.7 }}
@@ -93,7 +93,7 @@ const Hero = () => {
               {t("hero.title1")}
             </motion.span>
             <br />
-            <motion.span 
+            <motion.span
               initial={{ opacity: 0, x: -30, filter: "blur(8px)" }}
               animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
               transition={{ duration: 0.8, delay: 0.9 }}
@@ -118,21 +118,21 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 1.3, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <motion.div 
-              whileHover={{ scale: 1.05, y: -2 }} 
+            <motion.div
+              whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
               className="relative group"
             >
-              <motion.div 
+              <motion.div
                 className="absolute -inset-1 rounded-full bg-gold/30 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               />
               <Button variant="gold" size="xl" asChild className="relative">
                 <a href="#vehicles">{t("hero.exploreCollection")}</a>
               </Button>
             </motion.div>
-            <motion.div 
-              whileHover={{ scale: 1.05, y: -2 }} 
+            <motion.div
+              whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
             >

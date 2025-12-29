@@ -254,11 +254,10 @@ const VariantSlider = ({ carType, currentVariant }: VariantSliderProps) => {
             disabled={activeIndex === 0}
             whileHover={{ scale: activeIndex === 0 ? 1 : 1.1 }}
             whileTap={{ scale: activeIndex === 0 ? 1 : 0.95 }}
-            className={`absolute start-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center transition-all ${
-              activeIndex === 0
+            className={`absolute start-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center transition-all ${activeIndex === 0
                 ? "opacity-30 cursor-not-allowed"
                 : "hover:bg-gold hover:border-gold hover:text-primary-foreground hover:shadow-lg hover:shadow-gold/20"
-            }`}
+              }`}
           >
             <ChevronLeft className="w-5 h-5 rtl:rotate-180" />
           </motion.button>
@@ -268,17 +267,16 @@ const VariantSlider = ({ carType, currentVariant }: VariantSliderProps) => {
             disabled={activeIndex === variants.length - 1}
             whileHover={{ scale: activeIndex === variants.length - 1 ? 1 : 1.1 }}
             whileTap={{ scale: activeIndex === variants.length - 1 ? 1 : 0.95 }}
-            className={`absolute end-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center transition-all ${
-              activeIndex === variants.length - 1
+            className={`absolute end-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center transition-all ${activeIndex === variants.length - 1
                 ? "opacity-30 cursor-not-allowed"
                 : "hover:bg-gold hover:border-gold hover:text-primary-foreground hover:shadow-lg hover:shadow-gold/20"
-            }`}
+              }`}
           >
             <ChevronRight className="w-5 h-5 rtl:rotate-180" />
           </motion.button>
 
           {/* Tabs Container */}
-          <div className="overflow-hidden px-12">
+          <div className="overflow-hidden px-4 md:px-12">
             <div ref={tabsRef} className="flex justify-center gap-2 md:gap-4">
               {variants.map((variant, index) => (
                 <motion.button
@@ -286,9 +284,8 @@ const VariantSlider = ({ carType, currentVariant }: VariantSliderProps) => {
                   onClick={() => handleTabClick(index)}
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.98 }}
-                  className={`relative px-6 py-3 rounded-full font-medium text-sm md:text-base transition-all whitespace-nowrap ${
-                    activeIndex === index ? "text-primary-foreground" : "text-muted-foreground hover:text-foreground"
-                  }`}
+                  className={`relative px-6 py-3 rounded-full font-medium text-sm md:text-base transition-all whitespace-nowrap ${activeIndex === index ? "text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+                    }`}
                 >
                   {activeIndex === index && (
                     <motion.div
@@ -454,11 +451,10 @@ const VariantSlider = ({ carType, currentVariant }: VariantSliderProps) => {
                 onClick={() => handleTabClick(index)}
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
-                className={`h-2 rounded-full transition-all ${
-                  index === activeIndex
+                className={`h-2 rounded-full transition-all ${index === activeIndex
                     ? "bg-gold w-8 shadow-lg shadow-gold/30"
                     : "bg-border w-2 hover:bg-muted-foreground"
-                }`}
+                  }`}
               />
             ))}
           </div>
