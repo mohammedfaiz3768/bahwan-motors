@@ -43,6 +43,18 @@ import lx600BbBraimiSide from "@/assets/lx600-bb-braimi-side.jpg";
 import lx600BbBraimiDetail from "@/assets/lx600-bb-braimi-detail.jpg";
 import lx600BbBraimiRear from "@/assets/lx600-bb-braimi-rear.jpg";
 
+// Lexus LX 600 VIP Braimi Extra images
+import lx600VipBraimiExt1 from "@/assets/lx600-vip-braimi-ext-1.jpg";
+import lx600VipBraimiExt2 from "@/assets/lx600-vip-braimi-ext-2.jpg";
+import lx600VipBraimiExt3 from "@/assets/lx600-vip-braimi-ext-3.jpg";
+import lx600VipBraimiExt4 from "@/assets/lx600-vip-braimi-ext-4.jpg";
+
+// Lexus LX 600 VIP Braimi Interior images
+import lx600VipBraimiInterior1 from "@/assets/lx600-vip-braimi-interior-1.jpg";
+import lx600VipBraimiInterior2 from "@/assets/lx600-vip-braimi-interior-2.jpg";
+import lx600VipBraimiInterior3 from "@/assets/lx600-vip-braimi-interior-3.jpg";
+import lx600VipBraimiInterior4 from "@/assets/lx600-vip-braimi-interior-4.jpg";
+
 // Lexus LX 600 BB Braimi Interior images
 import lx600BbBraimiInterior1 from "@/assets/lx600-bb-braimi-interior-1.jpg";
 import lx600BbBraimiInterior2 from "@/assets/lx600-bb-braimi-interior-2.jpg";
@@ -87,6 +99,7 @@ const bbGalleries: Record<string, string[]> = {
 };
 
 const lx600BbBraimiGallery = [lx600BbBraimiFront, lx600BbBraimiSide, lx600BbBraimiRear, lx600BbBraimiDetail];
+const lx600VipBraimiGallery = [lx600VipBraimiExt1, lx600VipBraimiExt2, lx600VipBraimiExt3, lx600VipBraimiExt4];
 
 const gxrL5KuwaitGallery = [gxrL5KuwaitFront, gxrL5KuwaitSide, gxrL5KuwaitRear, gxrL5KuwaitDetail];
 const gxrL5KuwaitInteriorGallery = [gxrL5KuwaitInterior1, gxrL5KuwaitInterior2, gxrL5KuwaitInterior3, gxrL5KuwaitInterior4];
@@ -95,6 +108,7 @@ const gxrL4SaudiInteriorGallery = [gxrL4SaudiInterior1, gxrL4SaudiInterior2];
 const gxrL4BraimiGallery = [gxrL4BraimiFront, gxrL4BraimiSide, gxrL4BraimiRear, gxrL4BraimiDetail];
 const gxrL4BraimiInteriorGallery = [gxrL4BraimiInterior1, gxrL4BraimiInterior2];
 const lx600BbBraimiInteriorGallery = [lx600BbBraimiInterior1, lx600BbBraimiInterior2, lx600BbBraimiInterior3];
+const lx600VipBraimiInteriorGallery = [lx600VipBraimiInterior1, lx600VipBraimiInterior2, lx600VipBraimiInterior3, lx600VipBraimiInterior4];
 
 const colorImages: Record<string, Record<string, string>> = {
   lx600: {
@@ -172,6 +186,8 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
   const isBbSaudiWhite = carType === "lx600" && variant === "bb" && manufacturer === "saudi";
   // Check if this is Lexus BB Braimi variant for gallery
   const isLx600BbBraimi = carType === "lx600" && variant === "bb" && manufacturer === "Braimi";
+  // Check if this is Lexus VIP Braimi variant for gallery
+  const isLx600VipBraimi = carType === "lx600" && variant === "vip" && manufacturer === "Braimi";
   // Check if this is GXR L5 Kuwait variant for gallery
   const isGxrL5Kuwait = carType === "gxr" && variant === "l5" && manufacturer === "kuwait";
   // Check if this is GXR L4 Saudi variant for gallery
@@ -208,7 +224,9 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
 
   let currentGallery: string[] = [];
   if (activeTab === "exterior") {
-    if (isLx600BbBraimi) {
+    if (isLx600VipBraimi) {
+      currentGallery = lx600VipBraimiGallery; // Reuse base images + VIP specific
+    } else if (isLx600BbBraimi) {
       currentGallery = lx600BbBraimiGallery;
     } else if (isBbVariantPage) {
       currentGallery = bbGalleries[colorKey] || [];
@@ -228,6 +246,8 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
       currentGallery = gxrL4BraimiInteriorGallery;
     } else if (isLx600BbBraimi) {
       currentGallery = lx600BbBraimiInteriorGallery;
+    } else if (isLx600VipBraimi) {
+      currentGallery = lx600VipBraimiInteriorGallery;
     }
   }
 
