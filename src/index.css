@@ -74,6 +74,7 @@ html[dir="rtl"] {
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
@@ -84,7 +85,9 @@ html[dir="rtl"] {
       hsl(var(--dark-gradient-mid)) 50%,
       hsl(var(--dark-gradient-end)) 100%
     );
-    background-attachment: fixed;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
   }
 }
 

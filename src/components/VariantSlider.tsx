@@ -223,7 +223,7 @@ const VariantSlider = ({ carType, currentVariant }: VariantSliderProps) => {
 
   return (
     <section
-      className="py-12 bg-gradient-to-b from-secondary/50 to-background overflow-hidden"
+      className="py-12 bg-gradient-to-b from-secondary/50 to-background overflow-x-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -255,8 +255,8 @@ const VariantSlider = ({ carType, currentVariant }: VariantSliderProps) => {
             whileHover={{ scale: activeIndex === 0 ? 1 : 1.1 }}
             whileTap={{ scale: activeIndex === 0 ? 1 : 0.95 }}
             className={`absolute start-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center transition-all ${activeIndex === 0
-                ? "opacity-30 cursor-not-allowed"
-                : "hover:bg-gold hover:border-gold hover:text-primary-foreground hover:shadow-lg hover:shadow-gold/20"
+              ? "opacity-30 cursor-not-allowed"
+              : "hover:bg-gold hover:border-gold hover:text-primary-foreground hover:shadow-lg hover:shadow-gold/20"
               }`}
           >
             <ChevronLeft className="w-5 h-5 rtl:rotate-180" />
@@ -268,8 +268,8 @@ const VariantSlider = ({ carType, currentVariant }: VariantSliderProps) => {
             whileHover={{ scale: activeIndex === variants.length - 1 ? 1 : 1.1 }}
             whileTap={{ scale: activeIndex === variants.length - 1 ? 1 : 0.95 }}
             className={`absolute end-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center transition-all ${activeIndex === variants.length - 1
-                ? "opacity-30 cursor-not-allowed"
-                : "hover:bg-gold hover:border-gold hover:text-primary-foreground hover:shadow-lg hover:shadow-gold/20"
+              ? "opacity-30 cursor-not-allowed"
+              : "hover:bg-gold hover:border-gold hover:text-primary-foreground hover:shadow-lg hover:shadow-gold/20"
               }`}
           >
             <ChevronRight className="w-5 h-5 rtl:rotate-180" />
@@ -452,8 +452,8 @@ const VariantSlider = ({ carType, currentVariant }: VariantSliderProps) => {
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 className={`h-2 rounded-full transition-all ${index === activeIndex
-                    ? "bg-gold w-8 shadow-lg shadow-gold/30"
-                    : "bg-border w-2 hover:bg-muted-foreground"
+                  ? "bg-gold w-8 shadow-lg shadow-gold/30"
+                  : "bg-border w-2 hover:bg-muted-foreground"
                   }`}
               />
             ))}
