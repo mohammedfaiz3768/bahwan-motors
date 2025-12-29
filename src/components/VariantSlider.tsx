@@ -320,7 +320,7 @@ const VariantSlider = ({ carType, currentVariant }: VariantSliderProps) => {
               {/* Car Image with 3D tilt effect */}
               <div
                 ref={imageContainerRef}
-                className="relative aspect-[16/10] mb-6 cursor-pointer perspective-1000"
+                className="relative aspect-[16/10] mb-6 cursor-pointer perspective-1000 overflow-hidden rounded-xl"
                 onMouseMove={handleMouseMove}
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={handleMouseLeave}

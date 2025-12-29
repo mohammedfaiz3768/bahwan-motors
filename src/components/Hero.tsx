@@ -35,7 +35,7 @@ const Hero = () => {
         <img
           src={heroCar}
           alt="Luxury SUV"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-contain md:object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent rtl:bg-gradient-to-l" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50" />
