@@ -4,6 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import heroCar from '@/assets/hero-car.png';
+import heroCarMobile from '@/assets/hero-lexus-f-sport-mobile.png';
 
 const Hero = () => {
   const ref = useRef<HTMLElement>(null);
@@ -35,7 +36,12 @@ const Hero = () => {
         <img
           src={heroCar}
           alt="Luxury SUV"
-          className="w-full h-full object-contain md:object-cover object-center"
+          className="hidden md:block w-full h-full object-cover object-center"
+        />
+        <img
+          src={heroCarMobile}
+          alt="Lexus LX 600 F-Sport"
+          className="block md:hidden w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent rtl:bg-gradient-to-l" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50" />

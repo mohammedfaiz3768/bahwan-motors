@@ -9,12 +9,19 @@ import IntroLoader from '@/components/IntroLoader';
 import MouseGlow from '@/components/MouseGlow';
 
 const Index = () => {
-  const [introComplete, setIntroComplete] = useState(false);
+  const [introComplete, setIntroComplete] = useState(() => {
+    return sessionStorage.getItem('introShown') === 'true';
+  });
+
+  const handleIntroComplete = () => {
+    setIntroComplete(true);
+    sessionStorage.setItem('introShown', 'true');
+  };
 
   return (
     <>
-      <IntroLoader onComplete={() => setIntroComplete(true)} />
-      
+      {!introComplete && <IntroLoader onComplete={handleIntroComplete} />}
+
       {introComplete && (
         <div className="min-h-screen bg-background">
           <MouseGlow />
