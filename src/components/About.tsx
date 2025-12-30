@@ -39,12 +39,12 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Text Content */}
           <motion.div
-            initial={{ opacity: 0, x: -80, filter: "blur(10px)" }}
-            whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
-            <motion.span 
+            <motion.span
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -53,7 +53,7 @@ const About = () => {
             >
               {t("about.title")}
             </motion.span>
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -63,7 +63,7 @@ const About = () => {
               {t("about.heading").split("Luxury Automobiles")[0]}
               <span className="text-gradient-gold">{t("about.heading").includes("Luxury") ? "Luxury Automobiles" : "السيارات الفاخرة"}</span>
             </motion.h2>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -72,7 +72,7 @@ const About = () => {
             >
               {t("about.paragraph1")}
             </motion.p>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -88,27 +88,27 @@ const About = () => {
             {features.map((feature, index) => (
               <motion.div
                 key={feature.titleKey}
-                initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(8px)" }}
-                whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+                initial={{ opacity: 0, y: 60, scale: 0.9 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ 
-                  duration: 0.7, 
+                transition={{
+                  duration: 0.7,
                   delay: index * 0.15,
                   ease: [0.25, 0.46, 0.45, 0.94]
                 }}
-                whileHover={{ 
-                  y: -6, 
+                whileHover={{
+                  y: -6,
                   scale: 1.02,
-                  transition: { duration: 0.3 } 
+                  transition: { duration: 0.3 }
                 }}
                 className="glass-card p-6 rounded-xl hover:border-gold/30 transition-colors duration-300"
               >
-                <motion.div 
+                <motion.div
                   initial={{ scale: 0, rotate: -180 }}
                   whileInView={{ scale: 1, rotate: 0 }}
                   viewport={{ once: true }}
-                  transition={{ 
-                    duration: 0.6, 
+                  transition={{
+                    duration: 0.6,
                     delay: index * 0.15 + 0.3,
                     type: "spring",
                     stiffness: 200
@@ -117,7 +117,7 @@ const About = () => {
                 >
                   <feature.icon className="w-6 h-6 text-primary-foreground" />
                 </motion.div>
-                <motion.h3 
+                <motion.h3
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -126,7 +126,7 @@ const About = () => {
                 >
                   {t(feature.titleKey)}
                 </motion.h3>
-                <motion.p 
+                <motion.p
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}

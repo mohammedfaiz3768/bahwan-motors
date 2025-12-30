@@ -72,7 +72,7 @@ const VariantSlider = ({ carType, currentVariant }: VariantSliderProps) => {
   const [isHovering, setIsHovering] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const tabsRef = useRef<HTMLDivElement>(null);
-  const imageContainerRef = useRef<HTMLDivElement>(null);
+  const imageContainerRef = useRef<HTMLAnchorElement>(null);
   const touchStartRef = useRef<number | null>(null);
   const touchEndRef = useRef<number | null>(null);
   const autoPlayRef = useRef<NodeJS.Timeout | null>(null);
@@ -204,7 +204,7 @@ const VariantSlider = ({ carType, currentVariant }: VariantSliderProps) => {
   };
 
   const activeVariant = variants[activeIndex];
-  const defaultManufacturer = "saudi";
+  const defaultManufacturer = "Braimi";
 
   const getCarTitle = () => {
     if (carType === "lx600") {
@@ -317,10 +317,11 @@ const VariantSlider = ({ carType, currentVariant }: VariantSliderProps) => {
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="text-center"
             >
-              {/* Car Image with 3D tilt effect */}
-              <div
+              {/* Car Image with 3D tilt effect and Click Navigation */}
+              <Link
+                to={`/${carType}/${activeVariant.slug}/${defaultManufacturer}`}
+                className="block relative aspect-[16/10] mb-6 cursor-pointer perspective-1000 overflow-hidden rounded-xl"
                 ref={imageContainerRef}
-                className="relative aspect-[16/10] mb-6 cursor-pointer perspective-1000 overflow-hidden rounded-xl"
                 onMouseMove={handleMouseMove}
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={handleMouseLeave}
@@ -392,7 +393,7 @@ const VariantSlider = ({ carType, currentVariant }: VariantSliderProps) => {
                     ))}
                   </>
                 )}
-              </div>
+              </Link>
 
               {/* Variant Info with stagger animation */}
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
