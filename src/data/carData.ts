@@ -129,7 +129,7 @@ export const lx600Variants: Record<string, Record<string, CarVariant>> = {
       ],
     },
   },
-  "F-sport": {
+  "f-sport": {
     saudi: {
       id: "lx600-f-sport-saudi",
       name: "Lexus LX 600 F-Sport",

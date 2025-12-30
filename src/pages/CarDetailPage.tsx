@@ -44,52 +44,68 @@ import lx600BbBraimiDetail from "@/assets/lx600-bb-braimi-detail.jpg";
 import lx600BbBraimiRear from "@/assets/lx600-bb-braimi-rear.jpg";
 
 // Lexus LX 600 VIP Braimi Extra images
-import lx600VipBraimiExt1 from "@/assets/lx600-vip-braimi-ext-1.jpg";
-import lx600VipBraimiExt2 from "@/assets/lx600-vip-braimi-ext-2.jpg";
-import lx600VipBraimiExt3 from "@/assets/lx600-vip-braimi-ext-3.jpg";
-import lx600VipBraimiExt4 from "@/assets/lx600-vip-braimi-ext-4.jpg";
+import lx600VipBraimiExt1 from "@/assets/lexus-lx600-vip-braimi-ext-1.jpg";
+import lx600VipBraimiExt2 from "@/assets/lexus-lx600-vip-braimi-ext-2.jpg";
+import lx600VipBraimiExt3 from "@/assets/lexus-lx600-vip-braimi-ext-3.jpg";
+import lx600VipBraimiExt4 from "@/assets/lexus-lx600-vip-braimi-ext-4.jpg";
 
 // Lexus LX 600 VIP Braimi Interior images
-import lx600VipBraimiInterior1 from "@/assets/lx600-vip-braimi-interior-1.jpg";
-import lx600VipBraimiInterior2 from "@/assets/lx600-vip-braimi-interior-2.jpg";
-import lx600VipBraimiInterior3 from "@/assets/lx600-vip-braimi-interior-3.jpg";
-import lx600VipBraimiInterior4 from "@/assets/lx600-vip-braimi-interior-4.jpg";
+import lx600VipBraimiInteriorV2_1 from "@/assets/lexus-lx600-vip-braimi-interior-v2-1.jpg";
+import lx600VipBraimiInteriorV2_2 from "@/assets/lexus-lx600-vip-braimi-interior-v2-2.jpg";
+import lx600VipBraimiInteriorV2_3 from "@/assets/lexus-lx600-vip-braimi-interior-v2-3.jpg";
+import lx600VipBraimiInteriorV2_4 from "@/assets/lexus-lx600-vip-braimi-interior-v2-4.jpg";
+
+// Lexus LX 600 F Sport Braimi Exterior images
+import lx600FSportBraimiExt1 from "@/assets/lexus-lx600-f-sport-braimi-ext-1.jpg";
+import lx600FSportBraimiExt2 from "@/assets/lexus-lx600-f-sport-braimi-ext-2.jpg";
+import lx600FSportBraimiExt3 from "@/assets/lexus-lx600-f-sport-braimi-ext-3.jpg";
+import lx600FSportBraimiExt4 from "@/assets/lexus-lx600-f-sport-braimi-ext-4.jpg";
+
+// Lexus LX 600 F Sport Braimi Interior images
+import lx600FSportBraimiInterior1 from "@/assets/lexus-lx600-f-sport-braimi-interior-1.jpg";
+import lx600FSportBraimiInterior2 from "@/assets/lexus-lx600-f-sport-braimi-interior-2.jpg";
+
+// Lexus LX 600 BB Braimi Exterior images
+import lx600BbBraimiExt1 from "@/assets/lexus-lx600-bb-braimi-ext-1.jpg";
+import lx600BbBraimiExt2 from "@/assets/lexus-lx600-bb-braimi-ext-2.jpg";
+import lx600BbBraimiExt3 from "@/assets/lexus-lx600-bb-braimi-ext-3.jpg";
+import lx600BbBraimiExt4 from "@/assets/lexus-lx600-bb-braimi-ext-4.jpg";
 
 // Lexus LX 600 BB Braimi Interior images
-import lx600BbBraimiInterior1 from "@/assets/lx600-bb-braimi-interior-1.jpg";
-import lx600BbBraimiInterior2 from "@/assets/lx600-bb-braimi-interior-2.jpg";
-import lx600BbBraimiInterior3 from "@/assets/lx600-bb-braimi-interior-3.jpg";
+import lx600BbBraimiInteriorV2_1 from "@/assets/lexus-lx600-bb-braimi-interior-v2-1.jpg";
+import lx600BbBraimiInteriorV2_2 from "@/assets/lexus-lx600-bb-braimi-interior-v2-2.jpg";
+import lx600BbBraimiInteriorV2_3 from "@/assets/lexus-lx600-bb-braimi-interior-v2-3.jpg";
 
 // GXR L5 Kuwait images
-import gxrL5KuwaitFront from "@/assets/gxr-l5-kuwait-front.jpg";
-import gxrL5KuwaitSide from "@/assets/gxr-l5-kuwait-side.jpg";
-import gxrL5KuwaitRear from "@/assets/gxr-l5-kuwait-rear.jpg";
-import gxrL5KuwaitDetail from "@/assets/gxr-l5-kuwait-detail.jpg";
+import gxrL5KuwaitExt1 from "@/assets/gxr-l5-kuwait-ext-1.jpg";
+import gxrL5KuwaitExt2 from "@/assets/gxr-l5-kuwait-ext-2.jpg";
+import gxrL5KuwaitExt3 from "@/assets/gxr-l5-kuwait-ext-3.jpg";
+import gxrL5KuwaitExt4 from "@/assets/gxr-l5-kuwait-ext-4.jpg";
 
 // GXR L5 Kuwait Interior images
-import gxrL5KuwaitInterior1 from "@/assets/gxr-l5-kuwait-interior-1.jpg";
-import gxrL5KuwaitInterior2 from "@/assets/gxr-l5-kuwait-interior-2.jpg";
-import gxrL5KuwaitInterior3 from "@/assets/gxr-l5-kuwait-interior-3.jpg";
-import gxrL5KuwaitInterior4 from "@/assets/gxr-l5-kuwait-interior-4.jpg";
+import gxrL5KuwaitInteriorV2_1 from "@/assets/gxr-l5-kuwait-interior-v2-1.jpg";
+import gxrL5KuwaitInteriorV2_2 from "@/assets/gxr-l5-kuwait-interior-v2-2.jpg";
+import gxrL5KuwaitInteriorV2_3 from "@/assets/gxr-l5-kuwait-interior-v2-3.jpg";
 
 // GXR L4 Saudi images
-import gxrL4SaudiFront from "@/assets/gxr-l4-saudi-front.jpg";
-import gxrL4SaudiSide from "@/assets/gxr-l4-saudi-side.jpg";
-import gxrL4SaudiRear from "@/assets/gxr-l4-saudi-rear.jpg";
+import gxrL4SaudiExt1 from "@/assets/gxr-l4-saudi-ext-1.jpg";
+import gxrL4SaudiExt2 from "@/assets/gxr-l4-saudi-ext-2.jpg";
+import gxrL4SaudiExt3 from "@/assets/gxr-l4-saudi-ext-3.jpg";
 
 // GXR L4 Saudi Interior images
-import gxrL4SaudiInterior1 from "@/assets/gxr-l4-saudi-interior-1.jpg";
-import gxrL4SaudiInterior2 from "@/assets/gxr-l4-saudi-interior-2.jpg";
+import gxrL4SaudiInteriorV2_1 from "@/assets/gxr-l4-saudi-interior-v2-1.jpg";
+import gxrL4SaudiInteriorV2_2 from "@/assets/gxr-l4-saudi-interior-v2-2.jpg";
 
 // GXR L4 Braimi images
-import gxrL4BraimiSide from "@/assets/gxr-l4-braimi-side.jpg";
-import gxrL4BraimiDetail from "@/assets/gxr-l4-braimi-detail.jpg";
-import gxrL4BraimiFront from "@/assets/gxr-l4-braimi-front.jpg";
-import gxrL4BraimiRear from "@/assets/gxr-l4-braimi-rear.jpg";
+import gxrL4BraimiFront from "@/assets/gxr-l4-braimi-ext-1.jpg";
+import gxrL4BraimiSide from "@/assets/gxr-l4-braimi-ext-2.jpg";
+import gxrL4BraimiRear from "@/assets/gxr-l4-braimi-ext-3.jpg";
+import gxrL4BraimiDetail from "@/assets/gxr-l4-braimi-ext-4.jpg";
+import gxrL4BraimiExt5 from "@/assets/gxr-l4-braimi-ext-5.jpg";
 
 // GXR L4 Braimi Interior images
-import gxrL4BraimiInterior1 from "@/assets/gxr-l4-braimi-interior-1.jpg";
-import gxrL4BraimiInterior2 from "@/assets/gxr-l4-braimi-interior-2.jpg";
+import gxrL4BraimiInteriorV2_1 from "@/assets/gxr-l4-braimi-interior-v2-1.jpg";
+import gxrL4BraimiInteriorV2_2 from "@/assets/gxr-l4-braimi-interior-v2-2.jpg";
 
 // Gallery images by variant/color
 const bbGalleries: Record<string, string[]> = {
@@ -98,17 +114,19 @@ const bbGalleries: Record<string, string[]> = {
   gray: [lx600BbGrayFront, lx600BbGrayAngle, lx600BbGraySide, lx600BbGrayRear],
 };
 
-const lx600BbBraimiGallery = [lx600BbBraimiFront, lx600BbBraimiSide, lx600BbBraimiRear, lx600BbBraimiDetail];
+const lx600BbBraimiGallery = [lx600BbBraimiExt1, lx600BbBraimiExt2, lx600BbBraimiExt3, lx600BbBraimiExt4];
 const lx600VipBraimiGallery = [lx600VipBraimiExt1, lx600VipBraimiExt2, lx600VipBraimiExt3, lx600VipBraimiExt4];
+const lx600FSportBraimiGallery = [lx600FSportBraimiExt1, lx600FSportBraimiExt2, lx600FSportBraimiExt3, lx600FSportBraimiExt4];
 
-const gxrL5KuwaitGallery = [gxrL5KuwaitFront, gxrL5KuwaitSide, gxrL5KuwaitRear, gxrL5KuwaitDetail];
-const gxrL5KuwaitInteriorGallery = [gxrL5KuwaitInterior1, gxrL5KuwaitInterior2, gxrL5KuwaitInterior3, gxrL5KuwaitInterior4];
-const gxrL4SaudiGallery = [gxrL4SaudiFront, gxrL4SaudiSide, gxrL4SaudiRear];
-const gxrL4SaudiInteriorGallery = [gxrL4SaudiInterior1, gxrL4SaudiInterior2];
-const gxrL4BraimiGallery = [gxrL4BraimiFront, gxrL4BraimiSide, gxrL4BraimiRear, gxrL4BraimiDetail];
-const gxrL4BraimiInteriorGallery = [gxrL4BraimiInterior1, gxrL4BraimiInterior2];
-const lx600BbBraimiInteriorGallery = [lx600BbBraimiInterior1, lx600BbBraimiInterior2, lx600BbBraimiInterior3];
-const lx600VipBraimiInteriorGallery = [lx600VipBraimiInterior1, lx600VipBraimiInterior2, lx600VipBraimiInterior3, lx600VipBraimiInterior4];
+const gxrL5KuwaitGallery = [gxrL5KuwaitExt1, gxrL5KuwaitExt2, gxrL5KuwaitExt3, gxrL5KuwaitExt4];
+const gxrL5KuwaitInteriorGallery = [gxrL5KuwaitInteriorV2_1, gxrL5KuwaitInteriorV2_2, gxrL5KuwaitInteriorV2_3];
+const gxrL4SaudiGallery = [gxrL4SaudiExt1, gxrL4SaudiExt2, gxrL4SaudiExt3];
+const gxrL4SaudiInteriorGallery = [gxrL4SaudiInteriorV2_1, gxrL4SaudiInteriorV2_2];
+const gxrL4BraimiGallery = [gxrL4BraimiFront, gxrL4BraimiSide, gxrL4BraimiRear, gxrL4BraimiDetail, gxrL4BraimiExt5];
+const gxrL4BraimiInteriorGallery = [gxrL4BraimiInteriorV2_1, gxrL4BraimiInteriorV2_2];
+const lx600BbBraimiInteriorGallery = [lx600BbBraimiInteriorV2_1, lx600BbBraimiInteriorV2_2, lx600BbBraimiInteriorV2_3];
+const lx600VipBraimiInteriorGallery = [lx600VipBraimiInteriorV2_1, lx600VipBraimiInteriorV2_2, lx600VipBraimiInteriorV2_3, lx600VipBraimiInteriorV2_4];
+const lx600FSportBraimiInteriorGallery = [lx600FSportBraimiInterior1, lx600FSportBraimiInterior2];
 
 const colorImages: Record<string, Record<string, string>> = {
   lx600: {
@@ -188,6 +206,10 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
   const isLx600BbBraimi = carType === "lx600" && variant === "bb" && manufacturer === "Braimi";
   // Check if this is Lexus VIP Braimi variant for gallery
   const isLx600VipBraimi = carType === "lx600" && variant === "vip" && manufacturer === "Braimi";
+  // Check if this is Lexus F Sport Braimi variant for gallery
+  const isLx600FSportBraimi = carType === "lx600" && variant === "f-sport" && manufacturer === "Braimi";
+  // Check if this is Lexus F Sport Saudi variant for gallery
+  const isLx600FSportSaudi = carType === "lx600" && variant === "f-sport" && manufacturer === "saudi";
   // Check if this is GXR L5 Kuwait variant for gallery
   const isGxrL5Kuwait = carType === "gxr" && variant === "l5" && manufacturer === "kuwait";
   // Check if this is GXR L4 Saudi variant for gallery
@@ -226,6 +248,8 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
   if (activeTab === "exterior") {
     if (isLx600VipBraimi) {
       currentGallery = lx600VipBraimiGallery; // Reuse base images + VIP specific
+    } else if (isLx600FSportBraimi || isLx600FSportSaudi) {
+      currentGallery = lx600FSportBraimiGallery;
     } else if (isLx600BbBraimi) {
       currentGallery = lx600BbBraimiGallery;
     } else if (isBbVariantPage) {
@@ -248,6 +272,8 @@ const CarDetailPage = ({ carType }: CarDetailPageProps) => {
       currentGallery = lx600BbBraimiInteriorGallery;
     } else if (isLx600VipBraimi) {
       currentGallery = lx600VipBraimiInteriorGallery;
+    } else if (isLx600FSportBraimi || isLx600FSportSaudi) {
+      currentGallery = lx600FSportBraimiInteriorGallery;
     }
   }
 
