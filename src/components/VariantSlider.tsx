@@ -205,7 +205,7 @@ const VariantSlider = ({ carType, currentVariant }: VariantSliderProps) => {
 
   const activeVariant = variants[activeIndex];
   // Default to "Kuwait" for GXR L5, otherwise "Braimi"
-  const defaultManufacturer = activeVariant.slug === "l5" ? "Kuwait" : "Braimi";
+  const defaultManufacturer = activeVariant.slug === "l5" ? "kuwait" : "Braimi";
 
   const getCarTitle = () => {
     if (carType === "lx600") {
