@@ -45,7 +45,6 @@ export const lx600Variants: Record<string, Record<string, CarVariant>> = {
       colors: [
         { name: "Sonic White", hex: "#FFFFFF" },
         { name: "Obsidian Black", hex: "#1a1a1a" },
-        { name: "Titanium Gray", hex: "#6b6b6b" },
       ],
     },
     Braimi: {
@@ -71,7 +70,6 @@ export const lx600Variants: Record<string, Record<string, CarVariant>> = {
       colors: [
         { name: "Sonic White", hex: "#FFFFFF" },
         { name: "Obsidian Black", hex: "#1a1a1a" },
-        { name: "Titanium Gray", hex: "#6b6b6b" },
       ],
     },
   },
@@ -82,7 +80,7 @@ export const lx600Variants: Record<string, Record<string, CarVariant>> = {
       manufacturer: "Abdul Lateef Jameel",
       model: "LX 600",
       variant: "VIP",
-      year: 2025,
+      year: 2026,
       price: "Contact For Detail's",
       description:
         "The ultimate expression of luxury, the LX 600 Braimi VIP 2025 Saudi Edition features executive rear seating with massage and climate control.",
@@ -99,7 +97,6 @@ export const lx600Variants: Record<string, Record<string, CarVariant>> = {
       colors: [
         { name: "Sonic White", hex: "#FFFFFF" },
         { name: "Obsidian Black", hex: "#1a1a1a" },
-        { name: "Titanium Gray", hex: "#6b6b6b" },
       ],
     },
     Braimi: {
@@ -108,7 +105,7 @@ export const lx600Variants: Record<string, Record<string, CarVariant>> = {
       manufacturer: "Saud Bahwan",
       model: "LX 600",
       variant: "Braimi VIP",
-      year: 2025,
+      year: 2026,
       price: "Contact For Detail's",
       description:
         "Braimi Edition Braimi VIP 2025 with unparalleled comfort and executive appointments for the distinguished traveler.",
@@ -125,7 +122,6 @@ export const lx600Variants: Record<string, Record<string, CarVariant>> = {
       colors: [
         { name: "Sonic White", hex: "#FFFFFF" },
         { name: "Obsidian Black", hex: "#1a1a1a" },
-        { name: "Titanium Gray", hex: "#6b6b6b" },
       ],
     },
   },
@@ -153,7 +149,6 @@ export const lx600Variants: Record<string, Record<string, CarVariant>> = {
       colors: [
         { name: "Sonic White", hex: "#FFFFFF" },
         { name: "Obsidian Black", hex: "#1a1a1a" },
-        { name: "Titanium Gray", hex: "#6b6b6b" },
       ],
     },
     Braimi: {
@@ -178,7 +173,6 @@ export const lx600Variants: Record<string, Record<string, CarVariant>> = {
       colors: [
         { name: "Sonic White", hex: "#FFFFFF" },
         { name: "Obsidian Black", hex: "#1a1a1a" },
-        { name: "Titanium Gray", hex: "#6b6b6b" },
       ],
     },
   },
@@ -203,14 +197,13 @@ export const gxrVariants: Record<string, Record<string, CarVariant>> = {
         { label: "Torque", value: "385 Nm" },
         { label: "Transmission", value: "6-Speed Automatic" },
         { label: "Drivetrain", value: "Part-Time 4WD" },
-        { label: "Seating", value: "8 Passengers" },
+        { label: "Seating", value: "6 Passengers" },
         { label: "Fuel Type", value: "Regular Gasoline" },
         { label: "Ground Clearance", value: "225 mm" },
       ],
       colors: [
         { name: "Super White", hex: "#FFFFFF" },
-        { name: "Attitude Black", hex: "#1a1a1a" },
-        { name: "Gray Metallic", hex: "#6b6b6b" },
+        { name: "Deep Black", hex: "#1a1a1a" },
       ],
     },
     Braimi: {
@@ -229,14 +222,13 @@ export const gxrVariants: Record<string, Record<string, CarVariant>> = {
         { label: "Torque", value: "385 Nm" },
         { label: "Transmission", value: "6-Speed Automatic" },
         { label: "Drivetrain", value: "Part-Time 4WD" },
-        { label: "Seating", value: "8 Passengers" },
+        { label: "Seating", value: "6 Passengers" },
         { label: "Fuel Type", value: "Regular Gasoline" },
         { label: "Ground Clearance", value: "225 mm" },
       ],
       colors: [
         { name: "Super White", hex: "#FFFFFF" },
-        { name: "Attitude Black", hex: "#1a1a1a" },
-        { name: "Gray Metallic", hex: "#6b6b6b" },
+        { name: "Deep Black", hex: "#1a1a1a" },
       ],
     },
   },
@@ -257,14 +249,13 @@ export const gxrVariants: Record<string, Record<string, CarVariant>> = {
         { label: "Torque", value: "439 Nm" },
         { label: "Transmission", value: "6-Speed Automatic" },
         { label: "Drivetrain", value: "Full-Time 4WD" },
-        { label: "Seating", value: "8 Passengers" },
+        { label: "Seating", value: "6 Passengers" },
         { label: "Fuel Type", value: "Premium Gasoline" },
         { label: "Ground Clearance", value: "230 mm" },
       ],
       colors: [
         { name: "Super White", hex: "#FFFFFF" },
-        { name: "Attitude Black", hex: "#1a1a1a" },
-        { name: "Gray Metallic", hex: "#6b6b6b" },
+        { name: "Deep Black", hex: "#1a1a1a" },
       ],
     },
     kuwait: {
@@ -277,19 +268,18 @@ export const gxrVariants: Record<string, Record<string, CarVariant>> = {
       price: "Contact For Detail's",
       description: "Kuwait Edition GXR L5 2026 with exclusive features and premium V8 power for discerning buyers.",
       specs: [
-        { label: "Engine", value: "4.6L V8" },
+        { label: "Engine", value: "4.6L V6" },
         { label: "Power", value: "304 HP" },
         { label: "Torque", value: "439 Nm" },
         { label: "Transmission", value: "6-Speed Automatic" },
         { label: "Drivetrain", value: "Full-Time 4WD" },
-        { label: "Seating", value: "8 Passengers" },
+        { label: "Seating", value: "6 Passengers" },
         { label: "Fuel Type", value: "Premium Gasoline" },
         { label: "Ground Clearance", value: "230 mm" },
       ],
       colors: [
         { name: "Super White", hex: "#FFFFFF" },
-        { name: "Attitude Black", hex: "#1a1a1a" },
-        { name: "Gray Metallic", hex: "#6b6b6b" },
+        { name: "Deep Black", hex: "#1a1a1a" },
       ],
     },
   },

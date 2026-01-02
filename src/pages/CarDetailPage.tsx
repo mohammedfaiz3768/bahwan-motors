@@ -11,11 +11,9 @@ const Car3DViewer = lazy(() => import("@/components/Car3DViewer"));
 // Import car images
 import lx600White from "@/assets/lx600-white.jpg";
 import lx600Black from "@/assets/lx600-black.jpg";
-import lx600Gray from "@/assets/lx600-gray.jpg";
 import lx600Interior from "@/assets/lx600-interior.jpg";
 import gxrWhite from "@/assets/gxr-white.jpg";
 import gxrBlack from "@/assets/gxr-black.jpg";
-import gxrGray from "@/assets/gxr-gray.jpg";
 import gxrInterior from "@/assets/gxr-interior.jpg";
 
 // BB variant images - White
@@ -132,12 +130,10 @@ const colorImages: Record<string, Record<string, string>> = {
   lx600: {
     white: lx600BbWhiteFront,
     black: lx600BbBlackFront,
-    gray: lx600BbGrayFront,
   },
   gxr: {
     white: gxrWhite,
     black: gxrBlack,
-    gray: gxrGray,
   },
 };
 
